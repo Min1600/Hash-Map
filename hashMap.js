@@ -31,7 +31,9 @@
             if(el.key === key && el.value !== value){
              bucket.push({key, value})
              return 
-            } 
+            } else if(el.key === key && el.value === value){
+              return
+            }
         }
        bucket.push({key, value})
        return 
@@ -85,7 +87,7 @@
         }
 
         clear(){
-          this.bucket.Map((arr) => arr = [])
+          this.bucket = Array(this.capacity).fill(null).map(() => []);
         }
 
         keys(){

@@ -18,9 +18,5 @@ test.set('lion', 'golden')
 test.set('moon', 'silver')
 test.set('sun', 'gold')
 
-console.log(test.values())
-console.log(test.length())
-console.log(test.capacity)
-console.log(test.has("moon"))
-console.log(test.fullCapacity)
+
 console.log(test.entries())
